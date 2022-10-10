@@ -18,8 +18,14 @@ gem 'puma', '~> 5.0'
 # User Rubocop to check linter errors
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+# User SCSS for styling
+gem 'sass-rails'
+
 # Use CanCanCan for user authentication
 gem 'cancancan'
+
+# User font awesome for awesome icons
+gem 'font-awesome-rails'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
