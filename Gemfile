@@ -21,7 +21,10 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 # User SCSS for styling
 gem 'sass-rails'
 
-# Use CanCanCan for user authentication
+# Add devise for authentication
+gem 'devise'
+
+# Use CanCanCan for user authorization
 gem 'cancancan'
 
 # User font awesome for awesome icons
