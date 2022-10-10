@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_10_200001) do
 
   create_table "budgets", force: :cascade do |t|
     t.string "name", default: "Budget name"
-    t.decimal "amount", default: "0.0"
+    t.decimal "amount", precision: 15, scale: 2, default: "0.0"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -34,7 +34,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_10_200001) do
 
   create_table "groups", force: :cascade do |t|
     t.string "name", default: "Group name"
-    t.string "icon"
+    t.string "icon", default: "app/assets/images/category-icon-placeholder.png"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
