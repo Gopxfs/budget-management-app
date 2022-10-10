@@ -18,6 +18,9 @@ gem 'puma', '~> 5.0'
 # User Rubocop to check linter errors
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+# Use CanCanCan for user authentication
+gem 'cancancan'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
 
