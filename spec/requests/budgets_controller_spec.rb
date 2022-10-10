@@ -10,12 +10,12 @@ RSpec.describe 'Budgets Controller', type: :request do
     User.new(
       name: 'Gabriel',
       email: 'example@email.com',
-      password: '123123',
+      password: '123123'
     )
   end
 
-  context "GET #index" do
-    it "renders the :index view" do 
+  context 'GET #index' do
+    it 'renders the :index view' do
       sign_in(subject)
       get '/budgets'
 
