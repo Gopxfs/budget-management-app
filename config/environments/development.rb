@@ -1,4 +1,5 @@
 require "active_support/core_ext/integer/time"
+require "bullet"
 
 Rails.application.configure do
   config.after_initialize do
