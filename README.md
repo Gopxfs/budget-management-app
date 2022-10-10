@@ -1,7 +1,7 @@
 # Budget Management App
 This project allows you to manage your budget: you have a list of transactions associated with a category, allowing you to see how much money you spent and what you bought.
 
-## Built With: 
+## :hammer_and_wrench: Built With: 
 - Ruby on Rails 
 
 - SCSS 
@@ -29,7 +29,7 @@ To edit this project:
 - Open the repository you cloned with a code editor that you like. 
 - Edit the code as you want. 
 
-## Authors: 
+## :busts_in_silhouette: Authors: 
 👤 **Gabriel Fonseca** 
 - GitHub: [![GitHub Badge](https://img.shields.io/badge/-Gopxfs-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/Gopxfs) 
 - LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-GabrielFonseca-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://www.linkedin.com/in/gabriel-fonseca-sales/)  
