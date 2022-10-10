@@ -1,9 +1,9 @@
-require 'spec_helper'
-
 module AuthHelper
-  def login_user
-    @request.env["devise.mapping"] = Devise.mappings[:user]
-    user = FactoryGirl.create(:user)
-    sign_in user
+  def sign_in(user)
+    login_as(user, scope: :user)
+  end
+
+  def sign_out
+    logout(:user)
   end
 end
