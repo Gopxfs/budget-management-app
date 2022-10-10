@@ -22,6 +22,8 @@ RSpec.describe 'Groups Controller', type: :request do
       expect(response).to be_successful
 
       expect(response).to render_template(:index)
+
+      expect(response.body).to include('CATEGORIES')
     end
   end
 end
