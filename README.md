@@ -37,5 +37,8 @@ To edit this project:
 ## :star2: Show your support 
 Give a :star: if you like my project! 
 
+## Copyrights
+Original design idea by [Gregoire Vella](https://www.behance.net/gregoirevella), under [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/).
+
 ## :pencil: License
 This project is [MIT](https://github.com/Gopxfs/budget-management-app/blob/main/LICENSE) licensed. 
