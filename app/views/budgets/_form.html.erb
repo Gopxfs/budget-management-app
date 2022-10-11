@@ -12,6 +12,14 @@
   <% end %>
 
   <div>
+    <%= form.text_field :name, class: "input", value: '', placeholder: 'Transaction name' %>
+  </div>
+
+  <div>
+    <%= form.text_field :amount, class: "input", placeholder: 'Money spent' %>
+  </div>
+
+  <div>
     <%= form.submit 'Save' %>
   </div>
 <% end %>

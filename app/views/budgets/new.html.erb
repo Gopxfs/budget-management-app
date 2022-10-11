@@ -1,9 +1,14 @@
-<h1>New budget</h1>
+<section>
+  <header>
+    <h1>New transaction</h1>
+  </header>
 
-<%= render "form", budget: @budget %>
+  <%= render "form", budget: @budget %>
 
-<br>
+  <br>
 
-<div>
-  <%= link_to "Back to budgets", budgets_path %>
-</div>
+  <div>
+    <%= link_to "Back to budgets", budgets_path %>
+  </div> 
+</section>
+
