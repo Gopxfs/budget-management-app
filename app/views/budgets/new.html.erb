@@ -1,14 +1,11 @@
 <section>
   <header>
+    <%= render "shared/back_button", path: groups_path %>
     <h1>New transaction</h1>
   </header>
 
   <%= render "form", budget: @budget %>
 
   <br>
-
-  <div>
-    <%= link_to "Back to budgets", budgets_path %>
-  </div> 
 </section>
 
