@@ -7,10 +7,9 @@
 
   <div id="categories">
     <% @groups.each do |group| %>
-      <%= render group %>
-      <p>
-        <%= link_to "Show this group", group %>
-      </p>
+      <%= link_to group do %>
+        <%= render group %>
+      <% end %>
     <% end %>
   </div>
 
