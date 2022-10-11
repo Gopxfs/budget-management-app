@@ -11,4 +11,8 @@ class Group < ApplicationRecord
     end
     sum
   end
+
+  def transactions_list
+    budgets.order('created_at DESC')
+  end
 end
