@@ -6,7 +6,7 @@
     <h2>REGISTER</h2>
   </header>
 
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: false }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
