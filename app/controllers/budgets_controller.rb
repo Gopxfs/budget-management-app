@@ -65,6 +65,6 @@ class BudgetsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def budget_params
-    params.fetch(:budget, {})
+    params.require(:group).permit(:name, :amount, :user, :group)
   end
 end
