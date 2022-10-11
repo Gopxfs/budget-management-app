@@ -12,6 +12,14 @@
   <% end %>
 
   <div>
-    <%= form.submit %>
+    <%= form.text_field :name, class: "input", placeholder: 'Category name' %>
+  </div>
+
+    <div>
+    <%= form.text_field :icon, class: "input", value: '', placeholder: 'Icon URL (empty for default)' %>
+  </div>
+
+  <div>
+    <%= form.submit "CREATE CATEGORY" %>
   </div>
 <% end %>

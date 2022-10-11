@@ -1,14 +1,17 @@
-<p style="color: green"><%= notice %></p>
+<section>
+  <p style="color: green"><%= notice %></p>
 
-<h1>Groups</h1>
+  <header>
+    <h1>Categories</h1>
+  </header>
 
-<div id="groups">
-  <% @groups.each do |group| %>
-    <%= render group %>
-    <p>
-      <%= link_to "Show this group", group %>
-    </p>
-  <% end %>
-</div>
+  <div id="categories">
+    <% @groups.each do |group| %>
+      <%= link_to group do %>
+        <%= render group %>
+      <% end %>
+    <% end %>
+  </div>
 
-<%= link_to "New group", new_group_path %>
+  <%= link_to "Add a new category", new_group_path %>
+</section>

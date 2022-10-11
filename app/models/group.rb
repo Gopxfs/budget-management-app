@@ -3,4 +3,12 @@ class Group < ApplicationRecord
   belongs_to :user
 
   validates :name, presence: true, length: { minimum: 1, maximum: 40 }
+
+  def total_price
+    sum = 0
+    budgets.includes([:budgets_groups]).each do |transaction|
+      sum += transaction
+    end
+    sum
+  end
 end

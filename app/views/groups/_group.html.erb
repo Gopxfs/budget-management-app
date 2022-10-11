@@ -1,2 +1,5 @@
-<div id="<%= dom_id group %>">
+<div>
+  <%= image_tag "#{group.icon}", size: "75x75" %>
+  <p><%= group.name %></p>
+  <p>$ <%= group.total_price%></p>
 </div>
