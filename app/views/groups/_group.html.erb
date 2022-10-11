@@ -1,5 +1,5 @@
 <div>
-  <img src=<%= group.icon %> alt="<%= group.name %> icon">
+  <%= image_tag "#{group.icon}", size: "75x75" %>
   <p><%= group.name %></p>
   <p>$ <%= group.total_price%></p>
 </div>
