@@ -6,7 +6,7 @@ class Group < ApplicationRecord
 
   def total_price
     sum = 0
-    budgets.each do |transaction|
+    budgets.includes([:budgets_groups]).each do |transaction|
       sum += amount
     end
     sum
