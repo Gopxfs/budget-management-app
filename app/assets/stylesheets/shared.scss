@@ -1,6 +1,8 @@
 @import 'mixins';
 
 body {
+  overflow-x: hidden;
+
   * {
     @include general-text;
   }
@@ -12,4 +14,18 @@ body {
 
 .locked {
   pointer-events: none;
+}
+
+form {
+  width: 100vw;
+
+  input {
+    margin: none;
+    padding: 5px;
+    width: 90%;
+  }
+}
+
+section {
+  overflow-x: hidden;
 }
