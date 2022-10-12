@@ -25,7 +25,7 @@ class BudgetsController < ApplicationController
     @budget = Budget.new(budget_params)
     @budget.author = current_user
     params[:budget][:groups].each do |id|
-      @budget.groups.push(Group.find(id)) if id != "" 
+      @budget.groups.push(Group.find(id)) if id != ''
     end
 
     respond_to do |format|

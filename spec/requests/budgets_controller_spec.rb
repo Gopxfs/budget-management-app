@@ -10,12 +10,12 @@ RSpec.describe 'Budgets Controller', type: :request do
     User.new(
       name: 'Gabriel',
       email: 'example@email.com',
-      password: '123123',
+      password: '123123'
     )
   end
-  
+
   before :each do
-    group = Group.new()
+    group = Group.new
     group.user = subject
     group.id = 1
     group.save
