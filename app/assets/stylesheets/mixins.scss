@@ -7,14 +7,18 @@ $secondary-color: #5fb523;
 $text-color-darkest: #434b54;
 $text-color-dark: #555e67;
 $text-color-light: #878a8f;
-$text-color-lighest: #989da3;
-
-// **********
-// FONTS
-// **********
-
+$background-main: #989da3;
+$background-white: #fff;
 
 // **********
 // MIXINS
 // **********
+@mixin headline {
+  font-family: "Proxima Nova";
+  font-weight: bold;
+}
 
+@mixin general-text {
+  font-weight: 300;
+  font-family: "Proxima Nova";
+}
