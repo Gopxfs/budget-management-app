@@ -23,6 +23,14 @@ $background-white: #fff;
   font-family: "Proxima Nova";
 }
 
+@mixin flex ($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+  margin: 0 auto auto auto;
+}
+
 @mixin trim-text {
   overflow: hidden;
   text-overflow: ellipsis;
