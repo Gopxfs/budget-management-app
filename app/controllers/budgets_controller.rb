@@ -13,6 +13,7 @@ class BudgetsController < ApplicationController
   # GET /budgets/new
   def new
     @budget = Budget.new
+    @group = Group.find(params[:group_id])
   end
 
   # GET /budgets/1/edit
@@ -20,6 +21,7 @@ class BudgetsController < ApplicationController
 
   # POST /budgets or /budgets.json
   def create
+    @group = Group.find(params[:group_id])
     @budget = Budget.new(budget_params)
     @budget.author = current_user
     params[:budget][:groups].each do |id|
