@@ -12,6 +12,18 @@
   <% end %>
 
   <div>
-    <%= form.submit %>
+    <%= form.text_field :name, class: "input", value: '', placeholder: 'Transaction name' %>
+  </div>
+
+  <div>
+    <%= form.text_field :amount, class: "input", placeholder: 'Money spent' %>
+  </div>
+
+  <div>
+    <%= form.collection_check_boxes :groups, Group.all, :id, :name %>
+  </div>
+
+  <div>
+    <%= form.submit 'Save' %>
   </div>
 <% end %>

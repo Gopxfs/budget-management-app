@@ -1,10 +1,17 @@
-<p style="color: green"><%= notice %></p>
+<section>
+  <p style="color: green"><%= notice %></p>
 
-<%= render @group %>
+  <header>
+    <%= render "shared/back_button", path: groups_path %>
+    <h1>TRANSACTIONS</h1>
+  </header>
 
-<div>
-  <%= link_to "Edit this group", edit_group_path(@group) %> |
-  <%= link_to "Back to groups", groups_path %>
+  <div>
+    <p><%= @group.name %></p>
+    <p>$ <%= @group.total_price %></p>
+  </div>
 
-  <%= button_to "Destroy this group", @group, method: :delete %>
-</div>
+  <%= render "transactions", transactions: @group.transactions_list %>
+
+  <%= link_to "NEW TRANSACTION", new_budget_path %>
+</section>
