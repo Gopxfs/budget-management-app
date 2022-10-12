@@ -22,6 +22,7 @@ class GroupsController < ApplicationController
   def create
     @group = Group.new(group_params)
     @group.user = current_user
+    @group.icon = "https://cdn-icons-png.flaticon.com/512/94/94699.png" if @group.icon == ""
 
     respond_to do |format|
       if @group.save
