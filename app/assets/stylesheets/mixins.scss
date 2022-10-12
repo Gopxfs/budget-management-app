@@ -28,7 +28,6 @@ $background-white: #fff;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
-  margin: 0 auto auto auto;
 }
 
 @mixin trim-text {
