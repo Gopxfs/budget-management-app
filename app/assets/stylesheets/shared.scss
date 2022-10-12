@@ -17,7 +17,7 @@ body {
 }
 
 form {
-  width: 100vw;
+  @include flex(column);
 
   input {
     margin: none;

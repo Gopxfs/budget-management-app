@@ -23,11 +23,11 @@ $background-white: #fff;
   font-family: "Proxima Nova";
 }
 
-@mixin flex ($direction, $justify) {
+@mixin flex ($direction, $align, $justify) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
-  align-items: center;
+  align-items: $align;
   margin: 0 auto auto auto;
 }
 
