@@ -13,5 +13,5 @@
 
   <%= render "transactions", transactions: @group.transactions_list %>
 
-  <%= link_to "NEW TRANSACTION", new_budget_path %>
+  <%= link_to "NEW TRANSACTION", new_group_budget_path(@group) %>
 </section>
