@@ -33,7 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_10_200001) do
   end
 
   create_table "groups", force: :cascade do |t|
-    t.string "name", default: "Group name"
+    t.string "name", default: "Category name"
     t.string "icon", default: "https://cdn-icons-png.flaticon.com/512/94/94699.png"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
