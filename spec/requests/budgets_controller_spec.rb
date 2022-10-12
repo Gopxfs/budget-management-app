@@ -23,7 +23,7 @@ RSpec.describe 'Budgets Controller', type: :request do
 
       expect(response).to render_template(:index)
 
-      expect(response.body).to include('TRANSACTIONS')
+      expect(response.body).to include('Transactions')
     end
   end
 end
