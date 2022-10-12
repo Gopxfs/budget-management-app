@@ -22,3 +22,9 @@ $background-white: #fff;
   font-weight: 300;
   font-family: "Proxima Nova";
 }
+
+@mixin trim-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
