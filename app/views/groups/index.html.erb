@@ -6,7 +6,7 @@
   </header>
 
   <div id="categories">
-    <% @groups.each do |group| %>
+    <% @groups.includes([:budgets_groups, :budgets]).each do |group| %>
       <%= link_to group do %>
         <%= render group %>
       <% end %>

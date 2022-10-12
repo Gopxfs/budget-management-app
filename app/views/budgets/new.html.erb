@@ -1,10 +1,10 @@
 <section>
   <header>
-    <%= render "shared/back_button", path: groups_path %>
+    <%= render "shared/back_button", path: group_path(@group) %>
     <h1>New transaction</h1>
   </header>
 
-  <%= render "form", budget: @budget %>
+  <%= render "form", budget: @budget, group: @group %>
 
   <br>
 </section>

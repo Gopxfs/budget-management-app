@@ -14,16 +14,23 @@ RSpec.describe 'Budgets Controller', type: :request do
     )
   end
 
+  before :each do
+    group = Group.new
+    group.user = subject
+    group.id = 1
+    group.save
+  end
+
   context 'GET #index' do
     it 'renders the :index view' do
       sign_in(subject)
-      get '/budgets'
+      get '/categories/1'
 
       expect(response).to be_successful
 
-      expect(response).to render_template(:index)
+      expect(response).to render_template(:show)
 
-      expect(response.body).to include('TRANSACTIONS')
+      expect(response.body).to include('Transactions')
     end
   end
 end

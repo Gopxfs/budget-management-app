@@ -17,13 +17,13 @@ RSpec.describe 'Groups Controller', type: :request do
   context 'GET #index' do
     it 'renders the :index view' do
       sign_in(subject)
-      get '/groups'
+      get '/categories'
 
       expect(response).to be_successful
 
       expect(response).to render_template(:index)
 
-      expect(response.body).to include('CATEGORIES')
+      expect(response.body).to include('Categories')
     end
   end
 end

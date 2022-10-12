@@ -3,7 +3,7 @@
 
   <header>
     <%= render "shared/back_button", path: groups_path %>
-    <h1>TRANSACTIONS</h1>
+    <h1>Transactions</h1>
   </header>
 
   <div>
@@ -13,5 +13,5 @@
 
   <%= render "transactions", transactions: @group.transactions_list %>
 
-  <%= link_to "NEW TRANSACTION", new_budget_path %>
+  <%= link_to "NEW TRANSACTION", new_group_budget_path(@group) %>
 </section>
