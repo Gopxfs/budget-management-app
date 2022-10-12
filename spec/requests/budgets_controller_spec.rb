@@ -17,7 +17,7 @@ RSpec.describe 'Budgets Controller', type: :request do
   context 'GET #index' do
     it 'renders the :index view' do
       sign_in(subject)
-      get '/budgets'
+      get '/categories/1/transactions'
 
       expect(response).to be_successful
 

@@ -17,7 +17,7 @@ RSpec.describe 'Groups Controller', type: :request do
   context 'GET #index' do
     it 'renders the :index view' do
       sign_in(subject)
-      get '/groups'
+      get '/categories'
 
       expect(response).to be_successful
 
