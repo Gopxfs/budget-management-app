@@ -41,6 +41,14 @@ form {
       border: none;
     }
   }
+
+  .checkbox {
+    width: auto;
+    @include trim-text;
+    label {
+      margin-left: 5px;
+    }
+  }
 }
 
 section {
