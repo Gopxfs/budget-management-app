@@ -85,10 +85,16 @@
 
 #group-info {
   @include flex(row, center, space-between);
-  height: 32px;
+  height: 40px;
   width: 96%;
   padding: 8px;
   margin-bottom: 15px;
   margin-left: auto;
   background-color: $background-white;
+
+  &:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: $main-color-darkest;
+  }
 }
