@@ -7,6 +7,7 @@
   #transactions, #categories {
     @include flex(column, center, none);
     gap: 10px;
+    margin-bottom: 125px;
 
     a {
       @include flex(column, center, none);
@@ -78,4 +79,14 @@
     border: 1px solid $background-white;
     border-radius: 3px;
   }
+}
+
+#group-info {
+  @include flex(row, center, space-between);
+  height: 32px;
+  width: 96%;
+  padding: 8px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  background-color: $background-white;
 }
