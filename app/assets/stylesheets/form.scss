@@ -38,3 +38,14 @@ form {
     margin-top: 15px;
   }
 }
+
+.categories-checkboxes {
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 20px;
+
+  input {
+    margin-left: 15px;
+  }
+}

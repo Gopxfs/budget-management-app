@@ -19,7 +19,7 @@
     <%= form.text_field :amount, class: "input", placeholder: 'Money spent' %>
   </div>
 
-  <div class="checkbox">
+  <div class="checkbox categories-checkboxes">
     <%= form.collection_check_boxes :groups, Group.all, :id, :name do |c| %>
       <% if c.value == @group.id %>
         <%= c.check_box(checked: true, class: "locked") + c.text %>
