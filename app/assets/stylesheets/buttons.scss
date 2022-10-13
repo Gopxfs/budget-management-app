@@ -1,17 +1,17 @@
 @import 'mixins';
 
 .button {
-    padding: 20px;
-    background-color: $background-white;
-    width: 100%;
-    max-width: 444px;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 20px;
+  background-color: $background-white;
+  width: 100%;
+  max-width: 444px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
 
-    &:hover {
-      color: $background-white;
-      background-color: $main-color;
+  &:hover {
+    color: $background-white;
+    background-color: $main-color;
   }
 }
 

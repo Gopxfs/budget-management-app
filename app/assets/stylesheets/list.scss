@@ -4,19 +4,23 @@
   display: block;
   margin-top: 55px;
 
-  #transactions, #categories {
+  #transactions,
+  #categories {
     @include flex(column, center, none);
+
     gap: 10px;
     margin-bottom: 125px;
 
     a {
       @include flex(column, center, none);
+
       width: 100%;
     }
 
     .list__item {
       @include flex(row, center, space-between);
       @include trim-text;
+
       height: 64px;
       width: 90%;
       padding: 8px;
@@ -66,6 +70,7 @@
 
 #new-item {
   @include flex(column, center, center);
+
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -74,6 +79,7 @@
 
   &__button {
     @include trim-text;
+
     text-align: center;
     color: white;
     width: 315px;
@@ -85,6 +91,7 @@
 
 #group-info {
   @include flex(row, center, space-between);
+
   height: 40px;
   width: 96%;
   padding: 8px;

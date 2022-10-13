@@ -2,10 +2,13 @@
 
 form {
   @include flex(column, center, center);
+
   gap: 2px;
 
-  .field, .actions {
+  .field,
+  .actions {
     @include flex(row, center, center);
+
     width: 100%;
 
     input {
@@ -26,6 +29,7 @@ form {
 
   .checkbox {
     @include trim-text;
+
     margin: 8px 0;
     margin-top: 20px;
     width: auto;
@@ -34,7 +38,7 @@ form {
       width: 18px;
       height: 18px;
     }
-    
+
     label {
       margin-left: 5px;
       font-size: 20px;
@@ -48,12 +52,14 @@ form {
 
 .categories-checkboxes {
   @include flex(row, center, center);
+
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 
   .category-box {
     @include flex(row, center, center);
+
     gap: 5px;
     margin: 0 5px;
   }

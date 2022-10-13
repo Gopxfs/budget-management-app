@@ -8,6 +8,7 @@ body {
 
   * {
     @include general-text;
+
     margin: 0;
   }
 
@@ -16,7 +17,9 @@ body {
     color: inherit;
   }
 
-  h1,h2,h3 {
+  h1,
+  h2,
+  h3 {
     @include headline;
   }
 }
@@ -27,6 +30,7 @@ body {
 
 section {
   @include flex(column, none, center);
+
   height: 100vh;
   overflow-x: hidden;
 

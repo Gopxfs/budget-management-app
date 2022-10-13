@@ -14,13 +14,13 @@ $background-white: #fff;
 // MIXINS
 // **********
 @mixin headline {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", serif;
   font-weight: bold;
 }
 
 @mixin general-text {
   font-weight: 300;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", serif;
 }
 
 @mixin flex ($direction, $align, $justify) {

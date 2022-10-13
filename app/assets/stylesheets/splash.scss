@@ -3,11 +3,13 @@
 #splash {
   &__section {
     @include flex(column, center, center);
+
     height: 100vh;
   }
 
   &__info {
     @include flex(column, center, center);
+
     gap: 5px;
     width: 85%;
     text-align: center;
@@ -18,14 +20,15 @@
       font-size: 18px;
 
       a {
-      font-weight: bold;
-      color: $main-color-darkest;
+        font-weight: bold;
+        color: $main-color-darkest;
       }
     }
   }
 
   &__logo {
     @include flex(column, center, center);
+
     transform: translateY(-50%);
     gap: 10px;
 
@@ -36,6 +39,7 @@
 
   &__options {
     @include flex(column, center, center);
+
     gap: 5px;
     width: 85%;
     text-align: center;
