@@ -6,14 +6,11 @@ header {
   padding: 12px 8px;
   height: 20px;
   width: 100vw;
+  overflow-x: hidden;
   margin-bottom: 25px;
 
   * {
     color: $background-white;
-  }
-
-  .header__back-button {
-    margin-left: 5px;
   }
 
   h1,h2,h3 {
