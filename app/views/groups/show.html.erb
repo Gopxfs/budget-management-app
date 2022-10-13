@@ -6,10 +6,13 @@
     <h1>Transactions</h1>
   </header>
 
-  <div id="group-info">
-    <p><%= @group.name %></p>
-    <p>$ <%= @group.total_price %></p>
-  </div>
+  <%= link_to edit_group_path(@group) do %>
+    <div id="group-info">
+      <p><%= @group.name %></p>
+      <p>$ <%= @group.total_price %></p>
+    </div>
+  <% end %>
+
 
   <div id="transactions">
     <% if @group.budgets.count > 0 %>
