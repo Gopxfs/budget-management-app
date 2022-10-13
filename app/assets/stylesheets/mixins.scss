@@ -1,0 +1,37 @@
+// **********
+// COLORS
+// **********
+$main-color: #3778c2;
+$main-color-darkest: #2d619d;
+$secondary-color: #5fb523;
+$text-color-darkest: #434b54;
+$text-color-dark: #555e67;
+$text-color-light: #878a8f;
+$background-main: #e0e0e0;
+$background-white: #fff;
+
+// **********
+// MIXINS
+// **********
+@mixin headline {
+  font-family: "Proxima Nova", serif;
+  font-weight: bold;
+}
+
+@mixin general-text {
+  font-weight: 300;
+  font-family: "Proxima Nova", serif;
+}
+
+@mixin flex ($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin trim-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

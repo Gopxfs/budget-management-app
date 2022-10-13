@@ -14,3 +14,14 @@
  *= require_self
  */
 @import 'font-awesome';
+@import 'mixins';
+@import 'shared';
+@import 'header';
+@import 'form';
+@import 'splash';
+@import 'buttons.scss';
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('ProximaNova.otf');
+}

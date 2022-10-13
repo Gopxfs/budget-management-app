@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_10_200001) do
   enable_extension "plpgsql"
 
   create_table "budgets", force: :cascade do |t|
-    t.string "name", default: "Budget name"
+    t.string "name", default: "Transaction name"
     t.decimal "amount", precision: 15, scale: 2, default: "0.0"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
@@ -33,8 +33,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_10_200001) do
   end
 
   create_table "groups", force: :cascade do |t|
-    t.string "name", default: "Group name"
-    t.string "icon", default: "app/assets/images/category-icon-placeholder.png"
+    t.string "name", default: "Category name"
+    t.string "icon", default: "https://cdn-icons-png.flaticon.com/512/94/94699.png"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

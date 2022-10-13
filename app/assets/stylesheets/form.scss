@@ -1,0 +1,66 @@
+@import 'mixins';
+
+form {
+  @include flex(column, center, center);
+
+  gap: 2px;
+
+  .field,
+  .actions {
+    @include flex(row, center, center);
+
+    width: 100%;
+
+    input {
+      font-size: 20px;
+      padding: 20px 6px;
+      outline: none;
+      width: 95%;
+      border: none;
+      border-radius: 3px;
+    }
+  }
+
+  p {
+    margin-top: 15px;
+    margin-bottom: -8px;
+    font-size: 20px;
+  }
+
+  .checkbox {
+    @include trim-text;
+
+    margin: 8px 0;
+    margin-top: 20px;
+    width: auto;
+
+    input {
+      width: 18px;
+      height: 18px;
+    }
+
+    label {
+      margin-left: 5px;
+      font-size: 20px;
+    }
+  }
+
+  .actions {
+    margin-top: 15px;
+  }
+}
+
+.categories-checkboxes {
+  @include flex(row, center, center);
+
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+
+  .category-box {
+    @include flex(row, center, center);
+
+    gap: 5px;
+    margin: 0 5px;
+  }
+}

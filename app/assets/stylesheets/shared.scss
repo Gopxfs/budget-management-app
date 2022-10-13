@@ -1,0 +1,42 @@
+@import 'mixins';
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: $background-main;
+
+  * {
+    @include general-text;
+
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @include headline;
+  }
+}
+
+.locked {
+  pointer-events: none;
+}
+
+section {
+  @include flex(column, none, center);
+
+  height: 100vh;
+  overflow-x: hidden;
+
+  header {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

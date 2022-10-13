@@ -1,10 +1,11 @@
-<h1>Editing group</h1>
+<section>
 
-<%= render "form", group: @group %>
+<header>
+  <%= render "shared/back_button", path: groups_path %>
+  <h1>Editing Category</h1>
+</header>
 
-<br>
+<%= render "edit_form", group: @group %>
+<%= button_to "Delete category", group_url(@group), method: :delete, class: 'button danger' %>
 
-<div>
-  <%= link_to "Show this group", @group %> |
-  <%= link_to "Back to groups", groups_path %>
-</div>
+</section>

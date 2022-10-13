@@ -1,0 +1,41 @@
+@import 'mixins';
+
+.button {
+  padding: 20px;
+  background-color: $background-white;
+  width: 100%;
+  max-width: 444px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: $background-white;
+    background-color: $main-color;
+  }
+}
+
+.logout {
+  position: absolute;
+  font-size: 20px;
+  right: 2%;
+  top: 12px;
+  border: 0;
+  border-left: 1px solid;
+  padding-left: 15px;
+  color: $background-white;
+  background-color: inherit;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.danger {
+  background-color: rgb(202, 11, 11);
+  color: $background-white;
+  font-size: 20px;
+  margin-top: 15px;
+
+  &:hover {
+    background-color: rgb(219, 92, 92);
+  }
+}

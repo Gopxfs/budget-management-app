@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BudgetManagementApp</title>
+    <title>Budget Handler</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/b26ed8b64d.js" crossorigin="anonymous"></script>
+    <%= favicon_link_tag asset_path('favicon.ico') %>
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      <%= button_to "Logout", destroy_user_session_path, { method: :delete, data: { turbo:false }, class: 'logout'} %>
+    <% end %>
+    
+    <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
   </body>
 </html>
