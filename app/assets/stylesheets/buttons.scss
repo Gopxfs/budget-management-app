@@ -32,6 +32,8 @@
 .danger {
   background-color: rgb(202, 11, 11);
   color: $background-white;
+  font-size: 20px;
+  margin-top: 15px;
 
   &:hover {
     background-color: rgb(219, 92, 92);
