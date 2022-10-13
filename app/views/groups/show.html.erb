@@ -12,7 +12,11 @@
   </div>
 
   <div id="transactions">
-    <%= render "transactions", transactions: @group.transactions_list %>
+    <% if @group.budgets.count > 0 %>
+      <%= render "transactions", transactions: @group.transactions_list %>
+    <% else %>
+      <p> Your transaction list is empty. </p>
+    <% end %>
   </div>
 
   <div id="new-item">

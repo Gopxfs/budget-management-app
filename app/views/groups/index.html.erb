@@ -6,10 +6,14 @@
   </header>
 
   <div id="categories">
-    <% @groups.includes([:budgets_groups, :budgets]).each do |group| %>
-      <%= link_to group do %>
-        <%= render group %>
+    <% unless @groups.empty? %>
+      <% @groups.includes([:budgets_groups, :budgets]).each do |group| %>
+        <%= link_to group do %>
+          <%= render group %>
+        <% end %>
       <% end %>
+    <% else %>
+      <p> Your categories list is empty. </p>
     <% end %>
   </div>
 
