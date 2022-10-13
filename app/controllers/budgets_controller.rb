@@ -3,12 +3,12 @@ class BudgetsController < ApplicationController
   before_action :authenticate_user!
 
   # GET /budgets or /budgets.json
-  def index
-    @budgets = Budget.all
-  end
+  # def index
+  #   @budgets = Budget.all
+  # end
 
   # GET /budgets/1 or /budgets/1.json
-  def show; end
+  # def show; end
 
   # GET /budgets/new
   def new
