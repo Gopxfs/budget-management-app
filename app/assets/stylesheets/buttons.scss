@@ -28,3 +28,12 @@
   z-index: 1;
   cursor: pointer;
 }
+
+.danger {
+  background-color: rgb(202, 11, 11);
+  color: $background-white;
+
+  &:hover {
+    background-color: rgb(219, 92, 92);
+  }
+}

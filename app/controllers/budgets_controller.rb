@@ -60,7 +60,7 @@ class BudgetsController < ApplicationController
     @budget.destroy
 
     respond_to do |format|
-      format.html { redirect_to budgets_url, notice: 'Transaction was successfully removed.' }
+      format.html { redirect_to group_path(Group.find(params[:group_id])), notice: 'Transaction was successfully removed.' }
       format.json { head :no_content }
     end
   end
