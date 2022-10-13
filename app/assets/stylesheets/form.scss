@@ -51,7 +51,9 @@ form {
   gap: 5px;
   padding: 20px;
 
-  input {
-    margin-left: 15px;
+  .category-box {
+    @include flex(row, center, center);
+    gap: 5px;
+    margin: 0 5px;
   }
 }
