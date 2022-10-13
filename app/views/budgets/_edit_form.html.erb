@@ -1,0 +1,38 @@
+<%= form_with(model: budget, url: group_budgets_path) do |form| %>
+  <% if budget.errors.any? %>
+    <div style="color: red; margin-top: 50px;">
+      <h2><%= pluralize(budget.errors.count, "error") %> prohibited this budget from being saved:</h2>
+
+      <ul>
+        <% budget.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.text_field :name, class: "input", placeholder: 'Transaction name' %>
+  </div>
+
+  <div class="field">
+    <%= form.text_field :amount, class: "input", placeholder: 'Total price' %>
+  </div>
+
+  <p>Select transaction categories:</p>
+  <div class="checkbox categories-checkboxes">
+    <%= form.collection_check_boxes :groups, Group.all, :id, :name do |c| %>
+      <div class="category-box">
+        <% if c.value == @group.id %>
+          <%= c.check_box(checked: true, class: "locked") + c.text %>
+        <% else %>
+          <%= c.check_box + c.text %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Save', class:"button" %>
+  </div>
+<% end %>
