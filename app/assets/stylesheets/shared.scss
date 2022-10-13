@@ -25,32 +25,6 @@ body {
   pointer-events: none;
 }
 
-form {
-  @include flex(column, center, center);
-  gap: 2px;
-
-  .field {
-    @include flex(row, center, center);
-    width: 100%;
-
-    input {
-      font-size: 16px;
-      padding: 12px 6px;
-      outline: none;
-      width: 100%;
-      border: none;
-    }
-  }
-
-  .checkbox {
-    width: auto;
-    @include trim-text;
-    label {
-      margin-left: 5px;
-    }
-  }
-}
-
 section {
   overflow-x: hidden;
 }
