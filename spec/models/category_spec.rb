@@ -2,12 +2,12 @@ require 'rails_helper'
 
 RSpec.describe 'Category', type: :model do
   before(:each) do
-    @group = Group.new()
+    @group = Group.new
     @user = User.new(
       name: 'Gabriel',
       email: 'example@email.com',
       password: '123123'
-  )
+    )
     @budget = Budget.new(amount: 5)
     @group.user = @user
     @budget.author = @user
@@ -22,7 +22,7 @@ RSpec.describe 'Category', type: :model do
     end
 
     it 'should have a default icon' do
-      expect(@group.icon).to eq("https://cdn-icons-png.flaticon.com/512/94/94699.png")
+      expect(@group.icon).to eq('https://cdn-icons-png.flaticon.com/512/94/94699.png')
     end
   end
 

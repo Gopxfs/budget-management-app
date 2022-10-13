@@ -2,13 +2,13 @@ require 'rails_helper'
 
 RSpec.describe 'Budget', type: :model do
   before(:each) do
-    @group = Group.new()
+    @group = Group.new
     @user = User.new(
       name: 'Gabriel',
       email: 'example@email.com',
       password: '123123'
-  )
-    @budget = Budget.new()
+    )
+    @budget = Budget.new
     @group.user = @user
     @budget.author = @user
     @group.budgets.push(@budget)
