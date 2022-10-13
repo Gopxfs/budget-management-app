@@ -7,6 +7,10 @@ header {
   position: fixed;
   width: 100vw;
 
+  * {
+    color: $background-white;
+  }
+
   h1,h2,h3 {
     position: absolute;
     left: 50%;
