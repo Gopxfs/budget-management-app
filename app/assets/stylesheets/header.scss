@@ -4,6 +4,7 @@ header {
   @include flex(row, center, flex-start);
   background-image: linear-gradient(to bottom left, $main-color, $main-color-darkest);
   padding: 12px 8px;
+  height: 20px;
   width: 100vw;
   margin-bottom: 25px;
 
