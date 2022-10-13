@@ -48,7 +48,7 @@ form {
 .categories-checkboxes {
   @include flex(row, center, center);
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 20px;
   padding: 20px;
 
   .category-box {
