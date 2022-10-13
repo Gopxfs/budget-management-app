@@ -28,6 +28,10 @@
         padding: 5px;
         border: 1px solid $text-color-darkest;
       }
+
+      p {
+        @include trim-text;
+      }
     }
   }
 }
