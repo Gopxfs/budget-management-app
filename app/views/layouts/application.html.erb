@@ -13,7 +13,7 @@
 
   <body>
     <% if user_signed_in? %>
-      <%= button_to "Logout", destroy_user_session_path, { method: :delete, data: { turbo:false }}%>
+      <%= button_to "Logout", destroy_user_session_path, { method: :delete, data: { turbo:false }, class: 'logout'} %>
     <% end %>
     
     <%= yield %>
