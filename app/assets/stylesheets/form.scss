@@ -18,8 +18,10 @@ form {
   }
 
   .checkbox {
-    width: auto;
     @include trim-text;
+    margin: 8px 0;
+    width: auto;
+    
     label {
       margin-left: 5px;
     }
