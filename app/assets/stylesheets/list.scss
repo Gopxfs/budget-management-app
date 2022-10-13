@@ -20,6 +20,7 @@
       padding: 8px;
       border-radius: 8px;
       gap: 10px;
+      position: relative;
       background-color: $background-white;
 
       img {
@@ -35,6 +36,11 @@
 
       &__name {
         margin-right: auto;
+      }
+
+      &__creation-date {
+        position: absolute;
+        bottom: 0;
       }
     }
   }

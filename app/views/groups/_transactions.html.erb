@@ -2,6 +2,6 @@
   <div class="list__item">
     <p class="list__item__name"><%= transaction.name %></p>
     <p>$ <%= transaction.amount %></p>
-    <p><%= transaction.created_at %></p>
+    <p class="list__item__creation-date"><%= transaction.created_at.to_time.strftime('%B %e') %></p>
   </div>
 <% end %>
