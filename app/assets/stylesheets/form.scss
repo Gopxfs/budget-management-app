@@ -17,6 +17,12 @@ form {
     }
   }
 
+  p {
+    margin-top: 15px;
+    margin-bottom: -8px;
+    font-size: 16px;
+  }
+
   .checkbox {
     @include trim-text;
     margin: 8px 0;
