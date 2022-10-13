@@ -1,6 +1,6 @@
 <% transactions.each do |transaction| %>
   <div class="list__item">
-    <p><%= transaction.name %></p>
+    <p class="list__item__name"><%= transaction.name %></p>
     <p>$ <%= transaction.amount %></p>
     <p><%= transaction.created_at %></p>
   </div>
