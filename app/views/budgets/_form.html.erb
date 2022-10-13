@@ -21,7 +21,7 @@
 
   <p>Select transaction categories:</p>
   <div class="checkbox categories-checkboxes">
-    <%= form.collection_check_boxes :groups, Group.all, :id, :name do |c| %>
+    <%= form.collection_check_boxes :groups, current_user.groups, :id, :name do |c| %>
       <div class="category-box">
         <% if c.value == @group.id %>
           <%= c.check_box(checked: true, class: "locked") + c.text %>
