@@ -31,6 +31,13 @@ section {
 
 .logout {
   position: absolute;
-  right: 0;
-  top: 5px;
+  font-size: 20px;
+  right: 2%;
+  top: 12px;
+  border: 0;
+  border-left: 1px solid;
+  padding-left: 15px;
+  color: $background-white;
+  background-color: inherit;
+  cursor: pointer;
 }
