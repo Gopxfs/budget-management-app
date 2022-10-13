@@ -37,12 +37,26 @@
       &__name {
         margin-right: auto;
       }
+    }
+  }
+}
 
-      &__creation-date {
-        position: absolute;
-        bottom: 0;
-        color: $text-color-darkest;
-      }
+#transactions {
+  .list__item {
+    &__name {
+      position: absolute;
+      top: 15px;
+    }
+
+    &__price {
+      position: absolute;
+      right: 10px;
+    }
+
+    &__creation-date {
+      position: absolute;
+      bottom: 0;
+      color: $text-color-darkest;
     }
   }
 }
