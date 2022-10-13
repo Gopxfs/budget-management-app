@@ -26,8 +26,9 @@ body {
 }
 
 section {
-  @include flex(column,center,center);
+  @include flex(column, none, center);
   height: 100vh;
+  width: 100%;
   overflow-x: hidden;
 
   header {
