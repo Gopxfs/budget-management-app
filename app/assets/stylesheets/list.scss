@@ -60,3 +60,22 @@
     }
   }
 }
+
+#new-item {
+  @include flex(column, center, center);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 0;
+  background-color: $secondary-color;
+
+  &__button {
+    @include trim-text;
+    text-align: center;
+    color: white;
+    width: 315px;
+    padding: 20px 0;
+    border: 1px solid $background-white;
+    border-radius: 3px;
+  }
+}
