@@ -1,0 +1,32 @@
+@import 'mixins';
+
+#list {
+  display: block;
+  margin-top: 55px;
+
+  #transactions, #categories {
+    @include flex(column, center, none);
+    gap: 10px;
+
+    a {
+      @include flex(column, center, none);
+      width: 100%;
+    }
+
+    .list__item {
+      @include flex(row, center, flex-start);
+      width: 90%;
+      padding: 8px;
+      border-radius: 8px;
+      gap: 10px;
+      background-color: $background-white;
+
+      img {
+        weight: 50px;
+        width: 50px;
+        padding: 5px;
+        border: 1px solid $text-color-darkest;
+      }
+    }
+  }
+}

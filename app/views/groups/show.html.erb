@@ -1,4 +1,4 @@
-<section>
+<section id="list">
   <p style="color: green"><%= notice %></p>
 
   <header>
@@ -11,7 +11,9 @@
     <p>$ <%= @group.total_price %></p>
   </div>
 
-  <%= render "transactions", transactions: @group.transactions_list %>
+  <div id="transactions">
+    <%= render "transactions", transactions: @group.transactions_list %>
+  </div>
 
   <%= link_to "NEW TRANSACTION", new_group_budget_path(@group) %>
 </section>
