@@ -1,5 +1,5 @@
 # Budget Management App
-This project allows you to manage your budget: you have a list of transactions associated with a category, allowing you to see how much money you spent and what you bought.
+This app helps you manage your budget by creating different categories of expenses. Each category have its own transactions, displaying how much you spent and what you bought. One transaction can be assigned to multiple categories, allowing a more flexible money administration.
 
 ## Screenshots:
 ### Splash page
