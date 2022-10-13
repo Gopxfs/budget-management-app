@@ -12,6 +12,10 @@ header {
     color: $background-white;
   }
 
+  .header__back-button {
+    margin-left: 5px;
+  }
+
   h1,h2,h3 {
     position: absolute;
     left: 50%;
