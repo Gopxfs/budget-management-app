@@ -1,17 +1,23 @@
-<section>
-  <p style="color: green"><%= notice %></p>
+<section id="list">
+  <p style="color: green; margin-left: 50%; transform: translateX(-50%); text-align: center; margin-bottom: 12px;"><%= notice %></p>
 
   <header>
     <h1>Categories</h1>
   </header>
 
   <div id="categories">
-    <% @groups.includes([:budgets_groups, :budgets]).each do |group| %>
-      <%= link_to group do %>
-        <%= render group %>
+    <% unless @groups.empty? %>
+      <% @groups.includes([:budgets_groups, :budgets]).each do |group| %>
+        <%= link_to group do %>
+          <%= render group %>
+        <% end %>
       <% end %>
+    <% else %>
+      <p> Your categories list is empty. </p>
     <% end %>
   </div>
 
-  <%= link_to "NEW CATEGORY", new_group_path %>
+  <div id="new-item">
+    <%= link_to "NEW CATEGORY", new_group_path, id:"new-item__button" %>
+  </div>
 </section>

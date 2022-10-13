@@ -17,7 +17,10 @@ class BudgetsController < ApplicationController
   end
 
   # GET /budgets/1/edit
-  def edit; end
+  def edit
+    @group = Group.find(params[:group_id])
+    @budget = Budget.find(params[:id])
+  end
 
   # POST /budgets or /budgets.json
   def create
@@ -30,7 +33,9 @@ class BudgetsController < ApplicationController
 
     respond_to do |format|
       if @budget.save
-        format.html { redirect_to group_url(Group.find(params[:group_id])), notice: 'Budget was successfully created.' }
+        format.html do
+          redirect_to group_url(Group.find(params[:group_id])), notice: 'Transaction was successfully created.'
+        end
         format.json { render :show, status: :created, location: @budget }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -43,7 +48,11 @@ class BudgetsController < ApplicationController
   def update
     respond_to do |format|
       if @budget.update(budget_params)
-        format.html { redirect_to budget_url(@budget), notice: 'Budget was successfully updated.' }
+        format.html do
+          redirect_to group_budgets_url(Group.find(params do
+                                                     :group_id
+                                                   end)), notice: 'Transaction was successfully updated.'
+        end
         format.json { render :show, status: :ok, location: @budget }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -57,7 +66,9 @@ class BudgetsController < ApplicationController
     @budget.destroy
 
     respond_to do |format|
-      format.html { redirect_to budgets_url, notice: 'Budget was successfully destroyed.' }
+      format.html do
+        redirect_to group_path(Group.find(params[:group_id])), notice: 'Transaction was successfully removed.'
+      end
       format.json { head :no_content }
     end
   end

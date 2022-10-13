@@ -1,10 +1,9 @@
-<h1>Editing budget</h1>
+<section>
+  <header>
+     <%= render "shared/back_button", path: group_path(@group) %>
+    <h1>Delete transaction</h1>
+  </header>
 
-<%= render "form", budget: @budget %>
+  <%= button_to "Delete transaction (it will be removed from all categories)", group_budget_url(@group, @budget), method: :delete, class: 'button danger' %>
+</section>
 
-<br>
-
-<div>
-  <%= link_to "Show this budget", @budget %> |
-  <%= link_to "Back to budgets", budgets_path %>
-</div>

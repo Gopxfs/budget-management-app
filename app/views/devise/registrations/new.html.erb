@@ -1,14 +1,14 @@
 <section>
   <header>
     <%= render "shared/back_button", path: root_path %>
-    <h2>REGISTER</h2>
+    <h1>REGISTER</h1>
   </header>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: false }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
-      <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Full name" %>
+      <%= f.text_field :name, autofocus: true, value:'', autocomplete: "name", placeholder: "Full name" %>
     </div>
 
     <div class="field">
@@ -24,7 +24,7 @@
     </div>
 
     <div class="actions">
-      <%= f.submit "Sign up" %>
+      <%= f.submit "SIGN UP", class: 'button' %>
     </div>
   <% end %>
 </section>

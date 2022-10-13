@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= form.text_field :name, class: "input", value: '', placeholder: 'Transaction name' %>
+    <%= form.text_field :name, class: "input", placeholder: 'Transaction name' %>
   </div>
 
   <div class="field">
-    <%= form.text_field :amount, value: '', class: "input", placeholder: 'Total price' %>
+    <%= form.text_field :amount, class: "input", placeholder: 'Total price' %>
   </div>
 
   <p>Select transaction categories:</p>
   <div class="checkbox categories-checkboxes">
-    <%= form.collection_check_boxes :groups, current_user.groups, :id, :name do |c| %>
+    <%= form.collection_check_boxes :groups, Group.all, :id, :name do |c| %>
       <div class="category-box">
         <% if c.value == @group.id %>
           <%= c.check_box(checked: true, class: "locked") + c.text %>

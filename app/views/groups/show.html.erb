@@ -1,17 +1,28 @@
-<section>
-  <p style="color: green"><%= notice %></p>
+<section id="list">
+  <p style="color: green; margin-left: 50%; transform: translateX(-50%); text-align: center; margin-bottom: 12px;"><%= notice %></p>
 
   <header>
     <%= render "shared/back_button", path: groups_path %>
     <h1>Transactions</h1>
   </header>
 
-  <div>
-    <p><%= @group.name %></p>
-    <p>$ <%= @group.total_price %></p>
+  <%= link_to edit_group_path(@group) do %>
+    <div id="group-info">
+      <p><%= @group.name %></p>
+      <p>$ <%= @group.total_price %></p>
+    </div>
+  <% end %>
+
+
+  <div id="transactions">
+    <% if @group.budgets.count > 0 %>
+      <%= render "transactions", transactions: @group.transactions_list, group: @group %>
+    <% else %>
+      <p> Your transaction list is empty. </p>
+    <% end %>
   </div>
 
-  <%= render "transactions", transactions: @group.transactions_list %>
-
-  <%= link_to "NEW TRANSACTION", new_group_budget_path(@group) %>
+  <div id="new-item">
+    <%= link_to "NEW TRANSACTION", new_group_budget_path(@group), id:"new-item__button" %>
+  </div>
 </section>
