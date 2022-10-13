@@ -17,7 +17,9 @@ class BudgetsController < ApplicationController
   end
 
   # GET /budgets/1/edit
-  def edit; end
+  def edit
+    @group = Group.find(params[:group_id])
+  end
 
   # POST /budgets or /budgets.json
   def create

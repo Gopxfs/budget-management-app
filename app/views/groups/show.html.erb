@@ -16,7 +16,7 @@
 
   <div id="transactions">
     <% if @group.budgets.count > 0 %>
-      <%= render "transactions", transactions: @group.transactions_list %>
+      <%= render "transactions", transactions: @group.transactions_list, group: @group %>
     <% else %>
       <p> Your transaction list is empty. </p>
     <% end %>

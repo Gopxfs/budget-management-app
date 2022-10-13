@@ -1,7 +1,9 @@
 <% transactions.each do |transaction| %>
-  <div class="list__item">
-    <p class="list__item__name"><%= transaction.name %></p>
-    <p class="list__item__price">$ <%= transaction.amount %></p>
-    <p class="list__item__creation-date"><%= transaction.created_at.to_time.strftime('%B %e') %></p>
-  </div>
+  <%= link_to edit_group_budget_path(group, transaction) do %>
+    <div class="list__item">
+      <p class="list__item__name"><%= transaction.name %></p>
+      <p class="list__item__price">$ <%= transaction.amount %></p>
+      <p class="list__item__creation-date"><%= transaction.created_at.to_time.strftime('%B %e') %></p>
+    </div>
+  <% end %>
 <% end %>
