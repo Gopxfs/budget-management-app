@@ -1,0 +1,40 @@
+@import 'mixins';
+
+#splash {
+  &__section {
+    @include flex(column, center, center);
+    height: 100vh;
+  }
+
+  &__logo {
+    @include flex(column, center, center);
+    transform: translateY(-50%);
+    gap: 10px;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  &__options {
+    @include flex(column, center, center);
+    gap: 5px;
+    width: 85%;
+    text-align: center;
+    position: absolute;
+    bottom: 1.5%;
+
+    * {
+      padding: 20px;
+      background-color: $background-white;
+      width: 100%;
+      max-width: 444px;
+      border-radius: 5px;
+
+      &:hover {
+        color: $background-white;
+        background-color: $main-color;
+      }
+    }
+  }
+}
