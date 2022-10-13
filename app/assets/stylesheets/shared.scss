@@ -28,16 +28,3 @@ body {
 section {
   overflow-x: hidden;
 }
-
-.logout {
-  position: absolute;
-  font-size: 20px;
-  right: 2%;
-  top: 12px;
-  border: 0;
-  border-left: 1px solid;
-  padding-left: 15px;
-  color: $background-white;
-  background-color: inherit;
-  cursor: pointer;
-}
