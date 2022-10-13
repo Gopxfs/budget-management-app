@@ -1,6 +1,9 @@
 # Budget Management App
 This app helps you manage your budget by creating different categories of expenses. Each category have its own transactions, displaying how much you spent and what you bought. One transaction can be assigned to multiple categories, allowing a more flexible money administration.
 
+# Live demo: 
+https://gopx-budget-handler.herokuapp.com/
+
 ## Screenshots:
 ### Splash page
 <img src="https://user-images.githubusercontent.com/42799579/195514232-7a0d636e-3c87-47cc-a80d-9d012e4121a5.png" height="450">
