@@ -27,15 +27,18 @@ body {
 
 form {
   @include flex(column, center, center);
+  gap: 2px;
 
   .field {
     @include flex(row, center, center);
-    width: 90%;
+    width: 100%;
 
     input {
-      padding: 7px 10px;
+      font-size: 16px;
+      padding: 12px 6px;
       outline: none;
       width: 100%;
+      border: none;
     }
   }
 }
