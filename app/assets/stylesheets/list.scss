@@ -16,6 +16,7 @@
 
     .list__item {
       @include flex(row, center, space-between);
+      @include trim-text;
       height: 64px;
       width: 90%;
       padding: 8px;
