@@ -1,6 +1,6 @@
 <%= form_with(model: budget, url: group_budgets_path) do |form| %>
   <% if budget.errors.any? %>
-    <div style="color: red">
+    <div style="color: red; margin-top: 50px;">
       <h2><%= pluralize(budget.errors.count, "error") %> prohibited this budget from being saved:</h2>
 
       <ul>
