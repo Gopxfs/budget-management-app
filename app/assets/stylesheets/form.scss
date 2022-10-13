@@ -4,7 +4,7 @@ form {
   @include flex(column, center, center);
   gap: 2px;
 
-  .field {
+  .field, .actions {
     @include flex(row, center, center);
     width: 100%;
 
