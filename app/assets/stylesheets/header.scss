@@ -1,0 +1,15 @@
+@import 'mixins';
+
+header {
+  @include flex(row, center, flex-start);
+  background-image: linear-gradient(to bottom left, $main-color, $main-color-darkest);
+  padding: 12px 8px;
+  position: fixed;
+  width: 100vw;
+
+  h1,h2,h3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
