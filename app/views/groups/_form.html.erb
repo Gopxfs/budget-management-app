@@ -11,15 +11,15 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="field">
     <%= form.text_field :name, class: "input", value: '', placeholder: 'Category name' %>
   </div>
 
-  <div>
+  <div class="field">
     <%= form.text_field :icon, class: "input", value: '', placeholder: 'Icon URL (empty for default)' %>
   </div>
 
-  <div>
+  <div class="actions">
     <%= form.submit "Save" %>
   </div>
 <% end %>
